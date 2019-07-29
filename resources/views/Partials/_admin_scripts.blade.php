@@ -9,6 +9,7 @@
 <script src="{{ asset('admin/js/app-custom.js')}}"></script>
 
 <!-- Page Plugins -->
+<script src="{{ asset('admin/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js')}}"></script>
 <script src="{{ asset('admin/js/plugins/slick/slick.min.js') }}"></script>
 <script src="{{ asset('admin/js/plugins/chartjs/Chart.min.js') }}"></script>
 <script src="{{ asset('admin/js/plugins/flot/jquery.flot.min.js') }}"></script>
@@ -19,9 +20,12 @@
 <!-- Page JS Code -->
 <script src="{{ asset('admin/js/pages/index.js')}}"></script>
 <script>
+    
     $(function()
-    {
-        // Init page helpers (Slick Slider plugin)
-        App.initHelpers('slick');
-    });
+            {
+                // Init page helpers (BS Datepicker + BS Colorpicker + Select2 + Masked Input + Tags Inputs plugins)
+                App.initHelpers(['datepicker', 'colorpicker', 'select2', 'masked-inputs', 'tags-inputs']);
+            });
+
+
 </script>

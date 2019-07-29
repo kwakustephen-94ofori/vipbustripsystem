@@ -19,6 +19,7 @@
 
 
 <!-- Page JS Plugins CSS -->
+<link rel="stylesheet" href="{{ asset('admin/js/plugins/bootstrap-datepicker/bootstrap-datepicker3.min.css')}}" />
 <link rel="stylesheet" href="{{ asset('admin/js/plugins/slick/slick.min.css') }}"/>
 <link rel="stylesheet" href="{{ asset('admin/js/plugins/slick/slick-theme.min.css') }}"/>
 

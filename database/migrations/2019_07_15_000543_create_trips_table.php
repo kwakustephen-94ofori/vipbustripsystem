@@ -13,21 +13,21 @@ class CreateTripsTable extends Migration
      */
     public function up()
     {
-        Schema::table('trips', function (Blueprint $table) {
-            
+        Schema::create('trips', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name')->nullable();
             $table->unsignedInteger('driver_id')->nullable();
             $table->unsignedInteger('mate_id')->nullable();
             $table->unsignedInteger('bus_id')->nullable();
             $table->unsignedInteger('departingpoint_id')->nullable();
             $table->unsignedInteger('destinapointpoint_id')->nullable();
-            $table->string('departure_date');
-            $table->string('departure_time');
-            $table->text('arrival_date');
-            $table->time('arrival_time');
-            $table->mediumText('driver_comments');
-            $table->integer('number_males');
-            $table->integer('number_females');
+            $table->dateTime('departure_date');
+            $table->time('departure_time')->nullable();
+            $table->dateTime('arrival_date');
+            $table->time('arrival_time')->nullable();
+            $table->mediumText('driver_comments')->nullable();
+            $table->integer('number_males')->nullable();
+            $table->integer('number_females')->nullable();
             $table->softDeletes();
             $table->timestamps();
 
@@ -70,8 +70,6 @@ class CreateTripsTable extends Migration
      */
     public function down()
     {
-        Schema::table('trips', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('trips');
     }
 }

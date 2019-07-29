@@ -51,4 +51,10 @@ Route::get('/destination/points/create', 'DestinationpointController@createDesti
 Route::post('/destination/points/create', 'DestinationpointController@postCreateDestinationPoints')->name('post-create-destinationpoints');
 Route::get('/destination/points/all', 'DestinationpointController@allDestinationPoints')->name('all-destinationpoints');
 
+
+//trips
+Route::get('/trips/create/', 'TripsController@createNewTrip')->name('create-new-trip');
+Route::post('/trips/create/', 'TripsController@postCreateNewTrip')->name('post-create-new-trip');
+Route::get('/trips/all/', 'TripsController@allTrips')->name('all-trips');
+
 ?>

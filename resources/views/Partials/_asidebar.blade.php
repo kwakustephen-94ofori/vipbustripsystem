@@ -78,6 +78,22 @@
                 </li>
 
                 <li class="nav-item nav-item-has-subnav">
+                    <a href="javascript:void(0)"><i class="ion-social-javascript-outline"></i> TRIPS</a>
+                    <ul class="nav nav-subnav">
+
+                        <li>
+                            <a href="{{ route('create-new-trip')}}">Add Trip</a>
+                        </li>
+
+                        <li>
+                            <a href="{{ route('all-trips')}}">All Trips</a>
+                        </li>
+
+                       
+                    </ul>
+                </li>
+
+                <li class="nav-item nav-item-has-subnav">
                     <a href="javascript:void(0)"><i class="ion-ios-browsers-outline"></i> PASSENGERS</a>
                     <ul class="nav nav-subnav">
 
@@ -93,21 +109,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item nav-item-has-subnav">
-                    <a href="javascript:void(0)"><i class="ion-social-javascript-outline"></i> TRIPS</a>
-                    <ul class="nav nav-subnav">
-
-                        <li>
-                            <a href="base_js_maps.html">Add Trip</a>
-                        </li>
-
-                        <li>
-                            <a href="base_js_sliders.html">All Trips</a>
-                        </li>
-
-                       
-                    </ul>
-                </li>
+                
 
                  <li class="nav-item nav-item-has-subnav">
                     <a href="javascript:void(0)"><i class="ion-social-javascript-outline"></i> DEPARTING POINTS</a>
